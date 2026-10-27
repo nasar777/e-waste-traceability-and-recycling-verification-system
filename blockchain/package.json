@@ -1,0 +1,22 @@
+{
+  "name": "ecochain-blockchain",
+  "version": "1.0.0",
+  "description": "Smart contracts and tests for EcoChain E-Waste Traceability",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy": "hardhat run scripts/deploy.js"
+  },
+  "keywords": ["blockchain", "ethereum", "solidity", "hardhat", "e-waste", "traceability"],
+  "author": "EcoChain Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.22.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}

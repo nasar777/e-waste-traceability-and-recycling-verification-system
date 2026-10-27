@@ -1,0 +1,58 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "1. Start Hardhat Node",
+      "type": "shell",
+      "command": "cd blockchain && npx hardhat node",
+      "problemMatcher": [],
+      "isBackground": true,
+      "presentation": {
+        "group": "ecochain",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "2. Deploy Contract to Localhost",
+      "type": "shell",
+      "command": "cd blockchain && npx hardhat run scripts/deploy.js --network localhost",
+      "problemMatcher": [],
+      "presentation": {
+        "group": "ecochain",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "3. Start Backend Server",
+      "type": "shell",
+      "command": "cd backend && npm start",
+      "problemMatcher": [],
+      "isBackground": true,
+      "presentation": {
+        "group": "ecochain",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "4. Start Frontend Dev",
+      "type": "shell",
+      "command": "cd frontend && npm run dev",
+      "problemMatcher": [],
+      "isBackground": true,
+      "presentation": {
+        "group": "ecochain",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Run Contract Tests",
+      "type": "shell",
+      "command": "cd blockchain && npm test",
+      "problemMatcher": [],
+      "presentation": {
+        "group": "ecochain",
+        "panel": "dedicated"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "ecochain-project",
+  "version": "1.0.0",
+  "description": "EcoChain: Blockchain-Based E-Waste Traceability & Recycling Verification System",
+  "scripts": {
+    "node": "cd blockchain && npx hardhat node",
+    "deploy": "cd blockchain && npx hardhat run scripts/deploy.js --network localhost",
+    "test:contract": "cd blockchain && npm test",
+    "compile:contract": "cd blockchain && npm run compile",
+    "dev:backend": "cd backend && npm run dev",
+    "start:backend": "cd backend && npm start",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": ["blockchain", "solidity", "hardhat", "e-waste", "traceability", "mongodb", "react"],
+  "author": "EcoChain Project",
+  "license": "MIT"
+}
